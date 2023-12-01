@@ -4,21 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RPS</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>Rock paper scissors</h1>
+
+    <div class="wrapper">
+    <h1>Rock Paper Scissors</h1>
 
     <label for="playerName">Skriv ditt namn:</label>
-    <input type="text" id="playerName">
+    <input type="text" id="playerName" placeholder="Ditt namn">
     <button id="startBtn">Starta Spelet</button>
 
-    <div id="game"></div>
+    <h3>Spelare: <span id="playerChoice"></span></h3>
+    <h3>Dator: <span id="computerChoice"></span></h3>
+
+    <div class="buttons">
     <button id="rockBtn">Rock</button>
     <button id="paperBtn">Paper</button>
     <button id="scissorsBtn">Scissors</button>
+    <button id="resetBtn">Reset</button>
+    </div>
 
+    <div class="resultContainer">
     <p id="result"></p>
+</div>
+</div>
     
 </body>
 </html>
