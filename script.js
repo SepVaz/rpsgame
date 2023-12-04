@@ -43,7 +43,7 @@ function playGame(playerChoice) {
   function determineWinner(playerChoice, computerChoice) {
     const playerName = playerNameInput.value;
     if (playerChoice === computerChoice) {
-      return 'It\'s a tie!';
+      return 'Oavgjort';
     } else if (
       (playerChoice === 'Rock' && computerChoice === 'Scissors') ||
       (playerChoice === 'Paper' && computerChoice === 'Rock') ||

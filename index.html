@@ -4,19 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RPS</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap" rel="stylesheet">
     <script src="script.js" defer></script>
 </head>
 <body>
 
-    <div class="wrapper">
-    <h1>Rock Paper Scissors</h1>
 
+    <div class="gameContainer">
+    <h1>Rock Paper Scissors</h1>
+    <div class="wrapper">
     <label for="playerName">Skriv ditt namn:</label>
     <input type="text" id="playerName" placeholder="Ditt namn">
     <button id="startBtn">Starta Spelet</button>
+    </div>
 
-    <h3>Spelare: <span id="playerChoice"></span></h3>
-    <h3>Dator: <span id="computerChoice"></span></h3>
+   
+    <h3>Du valde: <span id="playerChoice"></span></h3><br>
+    <h3>Dator valde: <span id="computerChoice"></span></h3><br>
+
+    <div class="resultContainer">
+        <p id="result"></p>
+        </div>
+ 
 
     <div class="buttons">
     <button id="rockBtn">Rock</button>
@@ -25,10 +35,9 @@
     <button id="resetBtn">Reset</button>
     </div>
 
-    <div class="resultContainer">
-    <p id="result"></p>
+    
 </div>
-</div>
+
     
 </body>
 </html>
