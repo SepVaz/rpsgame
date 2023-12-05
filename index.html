@@ -6,22 +6,18 @@
     <title>RPS</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ac8f35d808.js" crossorigin="anonymous"></script>
     <script src="script.js" defer></script>
 </head>
 <body>
 
-
     <div class="gameContainer">
     <h1>Rock Paper Scissors</h1>
-    <div class="wrapper">
-    <label for="playerName">Skriv ditt namn:</label>
-    <input type="text" id="playerName" placeholder="Ditt namn">
-    <button id="startBtn">Starta Spelet</button>
-    </div>
-
+    <p id="playerNameDisplay"></p>
+    
    
-    <h3>Du valde: <span id="playerChoice"></span></h3><br>
-    <h3>Dator valde: <span id="computerChoice"></span></h3><br>
+    <h3 class="choice">You chose: <span id="playerChoice"></span></h3><br>
+    <h3>Computer chose: <span id="computerChoice"></span></h3><br>
 
     <div class="resultContainer">
         <p id="result"></p>
@@ -29,10 +25,11 @@
  
 
     <div class="buttons">
-    <button id="rockBtn">Rock</button>
-    <button id="paperBtn">Paper</button>
-    <button id="scissorsBtn">Scissors</button>
+    <button id="rockBtn" class="gameBtns" >Rock</button>
+    <button id="paperBtn" class="gameBtns" >Paper</button>
+    <button id="scissorsBtn" class="gameBtns" >Scissors</button><br>
     <button id="resetBtn">Reset</button>
+    <button id="backBtn">Back</button>
     </div>
 
     

@@ -2,80 +2,175 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Hedvig Letters Serif', serif;
+    background-color: rgb(212, 186, 162);
 
+}
+
+form#playerForm {
+    text-align: center;
 }
 
 div.gameContainer{
- 
-    background-color: rgb(212, 186, 162);
+    padding-top: 500px;
+    display: contents;
+    align-items: center;
     height: 300px;
     width: 1000px;
-    border: 4mm ridge rgba(8, 8, 8, 0.6);
     text-align: center;
-   
 }
 
-div.wrapper {
-    border: solid, black;
-    
-}
 
 h1 {
     text-align: center;
     border: solid,  black;
     margin-top: 15px;
     padding-bottom: 10px;
+    font-size: 50px;
+    font-weight: 500;
 }
 
 label {
+    font-size: 30px;
  
     padding-right: 5px;
 }
 
 input#playerName {
-    background-color: ;
+    margin-bottom: px;
+    font-size: 15px;
+    background-color: white ;
+    border: none;
+    height: 30px;
+    width: 140px;
+    text-indent: 10px;
+    border-radius: 8px;
 }
 
 button#startBtn {
-    padding-left: 5px;
-    padding-right: 5px;
-    margin-left: 10px;
-    border-radius: 25px;
-    background: #ddd7d2;
-   
+
+    font-size: 20px;
+    height: 30px;
+    width: 140px;
+    border-radius: 8px;
+    background-color: rgb(245, 232, 229);
+    border: none;
 }
 
+button#startBtn:hover {background-color: rgb(235, 230, 228)}
+
+button#startBtn:active {
+background-color: #e9cac0;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
 h3{
+  
    text-align: center;
-   margin-top: 20px;
+   margin-top: 10px;
+   font-size: 30px;
+   font-weight: 500;
 }
 
 button#rockBtn {
-    height: 50px;
-    width: 60px
-    
+    font-size: 30px;
+    height: 40px;
+    width: 150px;
+    margin: 5px;
+    border-radius: 8px;
+    background-color: rgb(233, 221, 219);
+    border: none;
+}
+
+button#rockBtn:hover {background-color: rgb(235, 230, 228)}
+
+button#rockBtn:active {
+background-color: #e9cac0;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 button#paperBtn {
-    height: 50px;
-    width: 60px
-    
+    font-size: 30px;
+    height: 40px;
+    width: 150px;
+    margin: 5px;
+    border-radius: 8px;
+    background-color: rgb(233, 221, 219);
+    border: none;   
+}
+
+button#paperBtn:hover {background-color: rgb(235, 230, 228)}
+
+button#paperBtn:active {
+background-color: #e9cac0;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+
 }
 
 button#scissorsBtn {
-    height: 50px;
-    width: 60px
-    
+    font-size: 30px;
+    height: 40px;
+    width: 150px;
+    margin: 5px;
+    border-radius: 8px;
+    background-color: rgb(233, 221, 219);
+    border: none;  
+}
+
+button#scissorsBtn:hover {background-color: rgb(235, 230, 228)}
+
+button#scissorsBtn:active {
+background-color: #e9cac0;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+
 }
 
 button#resetBtn {
-    height: 50px;
-    width: 60px
-    
+    font-size: 30px;
+    height: 40px;
+    width: 150px;
+    margin: 5px;
+    border-radius: 8px;
+    background-color: rgb(179, 138, 131);
+    border: none;
+}
+
+button#resetBtn:hover {background-color: rgb(235, 230, 228)}
+
+button#resetBtn:active {
+background-color: #c96f51;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 
-.resultContainer {
-    
-
+p#result {
+    font-weight: 500;
+    font-size: 30px;
+/*     text-transform: capitalize; */
 }
+
+button#backBtn {
+    font-size: 30px;
+    height: 40px;
+    width: 150px;
+    margin: 5px;
+    border-radius: 8px;
+    background-color: rgb(179, 138, 131);
+    border: none;
+}
+
+button#backBtn:hover {background-color: rgb(235, 230, 228)}
+
+button#backBtn:active {
+background-color: #e9cac0;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+@media

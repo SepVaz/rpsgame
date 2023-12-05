@@ -4,9 +4,10 @@ const startBtn = document.getElementById("startBtn");
 const rockBtn = document.getElementById("rockBtn");
 const paperBtn = document.getElementById("paperBtn");
 const scissorsBtn = document.getElementById("scissorsBtn");
+const form =  document.getElementById("playerForm")
+const gameBtns = document.querySelectorAll(".gameBtns")
+const resetBtn = document.getElementById("resetBtn")
 
-
-startBtn.addEventListener("click", startGame);
 
 rockBtn.addEventListener("click", function() {
     playGame("Rock")
@@ -19,13 +20,8 @@ paperBtn.addEventListener("click", function() {
 scissorsBtn.addEventListener("click", function() {
     playGame("Scissors")});
 
-function startGame() {
-    const playerName = playerNameInput.value.trim();
-    if (playerName === "") {
-        alert("Fyll i ditt namn!");
-        return;
-    }
-}
+
+
 
 function playGame(playerChoice) {
     const choices = ['Rock', 'Paper', 'Scissors'];
@@ -43,24 +39,61 @@ function playGame(playerChoice) {
   function determineWinner(playerChoice, computerChoice) {
     const playerName = playerNameInput.value;
     if (playerChoice === computerChoice) {
-      return 'Oavgjort';
+      return "Resultat: " + 'Oavgjort';
     } else if (
       (playerChoice === 'Rock' && computerChoice === 'Scissors') ||
       (playerChoice === 'Paper' && computerChoice === 'Rock') ||
       (playerChoice === 'Scissors' && computerChoice === 'Paper')
     ) {
-      return playerName + ' vinner!';
+      return "Resultat: " + playerName + ' vinner!';
     } else {
-      return 'Datorn vinner!';
+      return "Resultat: " + 'Datorn vinner!';
     }
   }
 
-  const resetBtn = document.getElementById("resetBtn");
 
-  resetBtn.addEventListener("click", function() {
+  function resetGame() {
     document.getElementById("playerChoice").innerText = "";
     document.getElementById("computerChoice").innerText = "";
     document.getElementById("result").innerText = "";
 
-    playerNameInput.value = "";
-  });
+}
+
+resetBtn.addEventListener("click", function() {
+
+    resetGame();
+});
+
+
+function backHome() {
+  
+  window.location.href = "start.html"
+}
+
+const backBtn = document.getElementById("backBtn")
+
+backBtn.addEventListener("click", function() {
+  backHome()
+})
+
+document.addEventListener('DOMContentLoaded', function() {
+  const storedPlayerName = localStorage.getItem("playerName");
+
+  if (storedPlayerName) {
+   
+      displayPlayerName(storedPlayerName);
+  } else {
+      console.error("PlayerName not found in localStorage");
+  }
+});
+
+
+function displayPlayerName(playerName) {
+  const playerNameElement = document.getElementById("playerNameDisplay");
+
+  if (playerNameElement) {
+      playerNameElement.innerText = "Welcome, " + playerName + "!";
+  } else {
+      console.error("PlayerNameDisplay element not found");
+  }
+}
