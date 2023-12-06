@@ -1,6 +1,13 @@
+
+const form =  document.getElementById("playerForm")
+
+function submitForm(event){
+    event.preventDefault();
+  } 
+  
+  form.addEventListener('submit', submitForm);
+
 const playerNameInput = document.getElementById("playerName");
-
-
 
 document.addEventListener('DOMContentLoaded', function() {
     const playerNameInput = document.getElementById("playerName");
@@ -10,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const playerName = playerNameInput.value.trim();
 
         if (playerName === "") {
-            alert("Please enter your name before starting the game!");
+            alert("Please enter your name!");
             return;
         }
 
@@ -26,11 +33,3 @@ playerNameInput.addEventListener("input", function() {
     playerNameInput.value = inputValue;
   });
   
-
- function submitForm(event){
-  event.preventDefault();
-
-  gameBtns.forEach(button => button.removeAttribute('disabled'));
-} 
-
-form.addEventListener('submit', submitForm);

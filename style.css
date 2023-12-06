@@ -3,7 +3,6 @@
     padding: 0px;
     font-family: 'Hedvig Letters Serif', serif;
     background-color: rgb(212, 186, 162);
-
 }
 
 form#playerForm {
@@ -17,12 +16,12 @@ div.gameContainer{
     height: 300px;
     width: 1000px;
     text-align: center;
+    border:black;
 }
 
 
 h1 {
     text-align: center;
-    border: solid,  black;
     margin-top: 15px;
     padding-bottom: 10px;
     font-size: 50px;
@@ -31,12 +30,11 @@ h1 {
 
 label {
     font-size: 30px;
- 
     padding-right: 5px;
 }
 
 input#playerName {
-    margin-bottom: px;
+    margin-top: 5px;
     font-size: 15px;
     background-color: white ;
     border: none;
@@ -47,10 +45,10 @@ input#playerName {
 }
 
 button#startBtn {
-
+    margin-top: 8px;
     font-size: 20px;
     height: 30px;
-    width: 140px;
+    width: 110px;
     border-radius: 8px;
     background-color: rgb(245, 232, 229);
     border: none;
@@ -64,19 +62,61 @@ background-color: #e9cac0;
   transform: translateY(4px);
 }
 
+p#playerNameDisplay {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 50px;
+}
 
-h3{
-  
-   text-align: center;
-   margin-top: 10px;
-   font-size: 30px;
+
+h3 {
+   margin-top: -10px;
+   display: flex;
+   justify-content: center;
+   font-size: 25px;
    font-weight: 500;
 }
 
-button#rockBtn {
+.h3Div {
+    margin-left: -50px;
+}
+
+span#playerChoice {
+    padding-left: 5px;
+}
+
+span#computerChoice {
+    padding-left: 5px;
+}
+
+p#result {
+    padding-bottom: 20px;
+    font-weight: 500;
     font-size: 30px;
-    height: 40px;
-    width: 150px;
+    color: rgb(95, 72, 72);
+}
+
+@keyframes jump {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0); 
+    }
+    40% {
+      transform: translateY(-20px);
+    }
+    60% {
+      transform: translateY(-10px); 
+    }
+  }
+  
+  .winner-animation {
+    animation: jump 1s ease-out; 
+  }
+
+button#rockBtn {
+    font-size: 20px;
+    height: 30px;
+    width: 110px;
     margin: 5px;
     border-radius: 8px;
     background-color: rgb(233, 221, 219);
@@ -92,9 +132,9 @@ background-color: #e9cac0;
 }
 
 button#paperBtn {
-    font-size: 30px;
-    height: 40px;
-    width: 150px;
+    font-size: 20px;
+    height: 30px;
+    width: 110px;
     margin: 5px;
     border-radius: 8px;
     background-color: rgb(233, 221, 219);
@@ -107,64 +147,61 @@ button#paperBtn:active {
 background-color: #e9cac0;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
-
 }
 
 button#scissorsBtn {
-    font-size: 30px;
-    height: 40px;
-    width: 150px;
+    font-size: 20px;
+    height: 30px;
+    width: 110px;
     margin: 5px;
     border-radius: 8px;
     background-color: rgb(233, 221, 219);
     border: none;  
 }
 
-button#scissorsBtn:hover {background-color: rgb(235, 230, 228)}
+button#scissorsBtn:hover {
+    background-color: rgb(235, 230, 228)
+}
 
 button#scissorsBtn:active {
 background-color: #e9cac0;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
-
 }
 
 button#resetBtn {
-    font-size: 30px;
-    height: 40px;
-    width: 150px;
+    font-size: 20px;
+    height: 30px;
+    width: 110px;
     margin: 5px;
     border-radius: 8px;
     background-color: rgb(179, 138, 131);
     border: none;
 }
 
-button#resetBtn:hover {background-color: rgb(235, 230, 228)}
+button#resetBtn:hover {
+    background-color: rgb(235, 230, 228)
+}
 
 button#resetBtn:active {
-background-color: #c96f51;
+background-color: #ecd9d2;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
 
-
-p#result {
-    font-weight: 500;
-    font-size: 30px;
-/*     text-transform: capitalize; */
-}
-
 button#backBtn {
-    font-size: 30px;
-    height: 40px;
-    width: 150px;
+    font-size: 20px;
+    height: 30px;
+    width: 110px;
     margin: 5px;
     border-radius: 8px;
     background-color: rgb(179, 138, 131);
     border: none;
 }
 
-button#backBtn:hover {background-color: rgb(235, 230, 228)}
+button#backBtn:hover {
+    background-color: rgb(235, 230, 228)
+}
 
 button#backBtn:active {
 background-color: #e9cac0;
@@ -173,4 +210,24 @@ background-color: #e9cac0;
 }
 
 
-@media
+
+@media (max-width: 530px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    label {
+        font-size: px;
+    }
+
+    p#playerNameDisplay {
+        margin-top: 20px;
+        font-size: 40px;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
