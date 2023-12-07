@@ -9,14 +9,15 @@ form#playerForm {
     text-align: center;
 }
 
-div.gameContainer{
+.gameContainer{
     padding-top: 500px;
     display: contents;
-    align-items: center;
     height: 300px;
-    width: 1000px;
+    width: 100px;
     text-align: center;
-    border:black;
+    border:solid black;
+    background-color: #412016;
+
 }
 
 
@@ -66,7 +67,8 @@ p#playerNameDisplay {
     margin-top: 15px;
     margin-bottom: 15px;
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
+    /* border: solid; */
 }
 
 
@@ -78,8 +80,15 @@ h3 {
    font-weight: 500;
 }
 
-.h3Div {
+/* div#h3Div {
     margin-left: -50px;
+    border: solid white;
+}
+ */
+img {
+    height: 18px;
+    width: 18px;
+    border-radius: 123px;
 }
 
 span#playerChoice {
@@ -93,7 +102,7 @@ span#computerChoice {
 p#result {
     padding-bottom: 20px;
     font-weight: 500;
-    font-size: 30px;
+    font-size: 25px;
     color: rgb(95, 72, 72);
 }
 
@@ -114,14 +123,15 @@ p#result {
   }
 
 button#rockBtn {
-    font-size: 20px;
+   font-size: 20px;
     height: 30px;
     width: 110px;
     margin: 5px;
+    padding-bottom: px;
     border-radius: 8px;
     background-color: rgb(233, 221, 219);
     border: none;
-}
+} 
 
 button#rockBtn:hover {background-color: rgb(235, 230, 228)}
 
@@ -130,6 +140,7 @@ background-color: #e9cac0;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+
 
 button#paperBtn {
     font-size: 20px;
