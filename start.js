@@ -1,5 +1,6 @@
 
 const form = document.getElementById("playerForm")
+const fillName = document.getElementById("fillName")
 
 function submitForm(event) {
     event.preventDefault();
@@ -13,8 +14,8 @@ startBtn.addEventListener("click", function () {
     const playerName = playerNameInput.value.trim();
 
     if (playerName === "") {
-        alert("Please enter your name!");
-        return;
+        fillName.textContent = "Please fill in your name"
+        return ;
     }
 
     localStorage.setItem("playerName", playerName);

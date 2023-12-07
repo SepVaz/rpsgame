@@ -6,18 +6,24 @@
 }
 
 form#playerForm {
+    margin: 0 auto;
+    padding-top: 5px;
     text-align: center;
+    border: solid #f7ebeb;
+    border-radius: 8px;
+    width: 250px;
+    height: 140px;
+    
 }
 
 .gameContainer{
     padding-top: 500px;
     display: contents;
-    height: 300px;
-    width: 100px;
+    height: 500px;
+    width: 1000px;
     text-align: center;
     border:solid black;
     background-color: #412016;
-
 }
 
 
@@ -25,7 +31,7 @@ h1 {
     text-align: center;
     margin-top: 15px;
     padding-bottom: 10px;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 500;
 }
 
@@ -43,6 +49,12 @@ input#playerName {
     width: 140px;
     text-indent: 10px;
     border-radius: 8px;
+}
+
+p#fillName {
+    margin-top: 5px;
+    font-size: 13px;
+    color: red;
 }
 
 button#startBtn {
@@ -74,17 +86,28 @@ p#playerNameDisplay {
 
 h3 {
    margin-top: -10px;
-   display: flex;
-   justify-content: center;
+  
    font-size: 25px;
    font-weight: 500;
+   text-align: center;
 }
 
-/* div#h3Div {
-    margin-left: -50px;
-    border: solid white;
+div#h3div {
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 45px;
+    text-align: center;
+    border: solid #f7ebeb;
+    border-radius: 8px;
+    width: 250px;
+    height: 100px;
+    
 }
- */
+
+div.buttons {
+    padding-top: 10px;
+}
+ 
 img {
     height: 18px;
     width: 18px;
@@ -103,7 +126,7 @@ p#result {
     padding-bottom: 20px;
     font-weight: 500;
     font-size: 25px;
-    color: rgb(95, 72, 72);
+    color: rgb(158, 90, 90);
 }
 
 @keyframes jump {
@@ -222,13 +245,13 @@ background-color: #e9cac0;
 
 
 
-@media (max-width: 530px) {
+@media (max-width: 410px) {
     h1 {
-        font-size: 40px;
+        font-size: 35px;
     }
 
     label {
-        font-size: px;
+        font-size: 25px;
     }
 
     p#playerNameDisplay {
